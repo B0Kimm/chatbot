@@ -8,23 +8,23 @@ class OrderDao() :
         return cls.query.all()
     
     @classmethod
-    def fetch_by_time(self, order_time) :
+    def fetch_by_time(cls, order_time) :
         return cls.query.filter_by(order_time == order_time).all()
 
     @classmethod
-    def fetch_by_userid(self, userid) :
+    def fetch_by_userid(cls, userid) :
         return cls.query.filter_by(userid == userid).first()
 
     @classmethod
-    def fetch_by_shop_id(self, shop_id):
+    def fetch_by_shop_id(cls, shop_id):
         return cls.query.filter_by(shop_id == shop_id).first()
 
     @classmethod
-    def fetch_by_food_id(self, food_id):
+    def fetch_by_food_id(cls, food_id):
         return cls.query.filter_by(food_id == food_id).first()
 
     @classmethod
-    def fetch_by_review_id(self, review_id):
+    def fetch_by_review_id(cls, review_id):
         return cls.query.filter_by(review_id == review_id).first()
 
 
